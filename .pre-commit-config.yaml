@@ -24,3 +24,10 @@ repos:
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
+
+  - repo: https://github.com/doughom/pre-commit-hooks
+    rev: v0.1.0
+    hooks:
+      - id: prettier
+      - id: shellcheck
+      - id: shfmt
