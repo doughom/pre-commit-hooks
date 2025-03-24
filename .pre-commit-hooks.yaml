@@ -1,0 +1,28 @@
+- id: prettier
+  name: Prettier
+  description: Format files with Prettier
+  entry: hooks/prettier.sh
+  language: script
+  types_or:
+    - css
+    - html
+    - javascript
+    - json
+    - jsx
+    - markdown
+    - ts
+    - yaml
+
+- id: shellcheck
+  name: ShellCheck
+  description: Lint shell scripts with ShellCheck
+  entry: hooks/shellcheck.sh
+  language: script
+  types: [shell]
+
+- id: shfmt
+  name: Shell Format
+  description: Format shell scripts with shfmt
+  entry: hooks/shfmt.sh
+  language: script
+  types: [shell]
